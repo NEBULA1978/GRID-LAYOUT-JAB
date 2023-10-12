@@ -6,6 +6,7 @@
         <title>Document</title>
         <style>
             bidy{
+                margin: 0;
                 font-family: Josefin 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
                 font-size: 22px;
                 color: white;
@@ -19,7 +20,7 @@
             .contenedor{
                 /* sinno ponemos esta en block */
                 display: grid;
-                border: 1px solid red;
+                /* border: 1px solid red; */
                 /* ejemplo 1 */
                 /* grid-template-columns: 200px 400px 200px; */
                 /* ejemplo 2 */
@@ -28,7 +29,9 @@
                 grid-template-columns: 200px 2fr minmax(105px,1fr);
                 /* ejemplo  4*/
                 /* Para ocupar el alto del navegador */
-                grid-template-rows: 33vh 33vh 33vh;
+                /* grid-template-rows: 33.33vh 33.33vh 33.33vh; */
+                /* igual que arriba mas corto */
+                grid-template-rows: repeat(3, calc(33.33vh - 5px));
                 /* ejemplo  5*/
                 grid-column-gap: 5px;
                 /* ejemplo  6*/
