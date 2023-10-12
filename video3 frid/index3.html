@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID</title>
+    <style>
+        body {
+            margin: 5px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 30px;
+        }
+        #contenedor{
+            background-color: crimson;
+            display: grid;
+            /* repartir el ancho de la pantalla en tantos trozos como sea posible*/
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: 1fr 1fr;
+            /* De una maniera,abajo de otro orden de la A a la J*/
+            grid-auto-flow: row;
+            /* Cambia el orden de  la A c e g i b d f h j*/
+            /* grid-auto-flow: column; */
+            /* Otro oreden de la A a la J */
+            /* grid-auto-flow: column-dense; */
+        }
+        .hijo{
+            background-color: #a27ff0;
+            border: 1px solid black;
+            height: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        <div class="hijo">A</div>
+        <div class="hijo">B</div>
+        <div class="hijo">C</div>
+        <div class="hijo">D</div>
+        <div class="hijo">E</div>
+        <div class="hijo">F</div>
+        <div class="hijo">G</div>
+        <div class="hijo">H</div>
+        <div class="hijo">I</div>
+        <div class="hijo">J</div>
+    </div>
+</body>
+</html>
