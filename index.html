@@ -19,7 +19,20 @@
             .contenedor{
                 /* sinno ponemos esta en block */
                 display: grid;
-                grid-template-columns: 200px 400px 200px;
+                /* ejemplo 1 */
+                /* grid-template-columns: 200px 400px 200px; */
+                /* ejemplo 2 */
+                /* grid-template-columns: 200px 1fr 200px; */
+                /* ejemplo  3*/
+                grid-template-columns: 200px 2fr 1fr;
+                /* ejemplo  4*/
+                grid-template-rows: 1fr 3fr 1fr;
+                /* ejemplo  5*/
+                grid-column-gap: 5px;
+                /* ejemplo  5*/
+                grid-row-gap: 5px;
+                /* ejemplo  5*/
+                
             }
 
             .contenedor div:nth-child(4n+1) {
