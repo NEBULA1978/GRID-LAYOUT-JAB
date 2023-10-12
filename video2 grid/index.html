@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            /* margin: 0; */
+        }
+
+        .main {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr 0.5fr 1.5fr;
+            /* Establece la altura del contenedor principal para llenar la pantalla */
+            /* height: 100vh;  */
+        }
+
+        .imagen_alargada, .aside, .logo {
+            background-size: cover;
+            background-position: center;
+        }
+
+        .imagen_alargada {
+            background-image: url("./img/pexels-photo-12561841.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .aside {
+            background-image: url("./img/pexels-photo-14145101.jpeg");
+        }
+
+        .logo {
+            background-image: url("./img/pexels-photo-18528202.webp");
+            background-size: cover;
+            background-position: center;
+        }
+        
+        section {
+            background-color: #ffffff; /* Agrega un color de fondo para hacerlo visible */
+        }
+        
+        header {
+            background-color: #ffffff; /* Agrega un color de fondo para hacerlo visible */
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="imagen_alargada"></div>
+        <aside class="aside"></aside>
+        <section>
+            Contenido para la sección
+        </section>
+        <header>
+            <p>HTML6.es</p>
+        </header>
+        <div class="logo"></div>
+    </div>
+</body>
+</html>
