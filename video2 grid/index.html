@@ -7,44 +7,54 @@
     <style>
         body {
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            /* margin: 0; */
         }
 
         .main {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: 1fr 0.5fr 1.5fr;
-            /* Establece la altura del contenedor principal para llenar la pantalla */
-            /* height: 100vh;  */
-        }
-
-        .imagen_alargada, .aside, .logo {
-            background-size: cover;
-            background-position: center;
+            grid-template-columns: repeat(3, 1fr); /* Divide en 3 columnas de igual ancho */
+            grid-template-rows: 1fr 0.5fr 1.5fr; /* Divide en 3 filas con alturas proporcionales */
+            grid-column-gap: 25px; /* Espacio entre columnas */
+            grid-row-gap: 30px; /* Espacio entre filas */
         }
 
         .imagen_alargada {
             background-image: url("./img/pexels-photo-12561841.jpeg");
             background-size: cover;
             background-position: center;
+            grid-column: 1/3; /* Ocupa 2 columnas (de 1 a 3) */
+            grid-row: 1; /* En la fila 1 */
         }
 
         .aside {
             background-image: url("./img/pexels-photo-14145101.jpeg");
+            background-size: cover;
+            background-position: center;
+            grid-column: 3; /* En la columna 3 */
+            grid-row: 1/4; /* Ocupa 3 filas (de 1 a 4) */
         }
 
         .logo {
             background-image: url("./img/pexels-photo-18528202.webp");
             background-size: cover;
             background-position: center;
+            background-repeat: no-repeat; /* Evita que se repita el fondo */
+            grid-column: 2; /* En la columna 2 */
+            grid-row: 3; /* En la fila 3 */
         }
         
         section {
-            background-color: #ffffff; /* Agrega un color de fondo para hacerlo visible */
+            background-color: #ffffff; /* Color de fondo blanco para hacerlo visible */
+            grid-column: 1; /* En la columna 1 */
+            grid-row: 2/4; /* Ocupa 2 filas (de 2 a 4) */
         }
         
         header {
-            background-color: #ffffff; /* Agrega un color de fondo para hacerlo visible */
+            grid-column: 2; /* En la columna 2 */
+            grid-row: 2; /* En la fila 2 */
+            background-color: black; /* Color de fondo negro */
+            text-align: center; /* Centra el contenido del encabezado */
+            font-size: 4vw; /* Tamaño de fuente relativo al ancho de la ventana */
+            color: white; /* Color del texto blanco */
         }
     </style>
 </head>
