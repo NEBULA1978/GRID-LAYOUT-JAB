@@ -1,3 +1,6 @@
+#!/bin/bash
+
+cat <<EOF > index.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -197,3 +200,7 @@
   </div>
 </body>
 </html>
+EOF
+
+# Abrir el archivo HTML en un navegador (puedes cambiar el comando para tu navegador específico)
+# xdg-open index.html
